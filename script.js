@@ -1,4 +1,4 @@
-//funzioni per gestire i carousel item (3 per ognuna altrimenti andavano in conflitto alcune immagini)
+//funzioni per gestire i carousel item (3 per ognuno altrimenti andavano in conflitto alcune immagini)
 let carouselTrending = document.querySelectorAll('.carousel-trending .carousel-item')
 
 carouselTrending.forEach((el) => {
