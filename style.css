@@ -77,11 +77,6 @@ body {
     transform: translateX(15px);
 }
 
-/*ridimensionamento container card per sfruttare creare effetto ultima slide parzialmente visibile*/
-
-.carousel-item{
-    width: 1300px;
-}
 
 /*regole per animazione sulla card al passaggio del mouse*/
 .card {
@@ -95,6 +90,10 @@ body {
     transform: scale(1.1);
     z-index: 1;
   }
+/*regola per rendere la card all'hover più grande rispetto al box contenitore*/
+.carousel-inner {
+    overflow: visible;
+}
 
 .footer-text{
     font-size: 8pt;
@@ -106,6 +105,7 @@ body {
     width: 150px;
 }
 
+/*media query per gestione carosello responsive*/
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -121,7 +121,6 @@ body {
     display: flex;
 }
 
-/* medium and up screens */
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-end.active,
@@ -140,7 +139,7 @@ body {
   transform: translateX(0);
 }
 
-/*regole per non mostrare le section e farle così apparire al momento giusto dello scroll*/
+/*regole per non mostrare le section e farle così apparire al momento giusto dello scroll tramite funzione js*/
 
 #newReleases{
     display: none;
